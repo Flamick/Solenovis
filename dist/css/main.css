@@ -737,6 +737,8 @@ body {
 @media screen and (min-width: 768px) {
   #home-hero {
     min-height: 50vh; }
+    #home-hero h1 {
+      font-size: 3rem; }
   .wrapper {
     max-width: 500px; }
   .img-area {
@@ -755,6 +757,8 @@ body {
 @media screen and (min-width: 1025px) {
   #home-hero {
     min-height: 110vh; }
+    #home-hero h1 {
+      font-size: 4rem; }
   #out-now {
     height: 75vh; }
   #youtube .container {
