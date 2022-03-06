@@ -70,6 +70,9 @@
   display: block;
   margin: 0 auto; }
 
+.reverse {
+  flex-direction: row-reverse; }
+
 #mobile-nav {
   background: #80764A;
   z-index: 4;
@@ -630,8 +633,8 @@ body {
     #about-content-text p {
       line-height: 1.2rem; }
 
-#members-content {
-  padding-bottom: 1.4rem; }
+#members {
+  padding: 1.4rem 0; }
   #members-content #members-heading {
     padding: 0 0 1.4rem 0; }
     #members-content #members-heading h2 {
@@ -641,31 +644,33 @@ body {
   #members-content .members-bio {
     padding: 1.2rem;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1.4rem;
     background-color: #f4f4f4;
     border-radius: 5px;
     box-shadow: 0px 6px 12px #80764A;
     margin: 1rem 0; }
-    #members-content .members-bio:nth-child(odd) {
-      flex-direction: row-reverse; }
   #members-content .members-card {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 50%;
     gap: 1.4rem; }
-    #members-content .members-card .member-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center; }
+    #members-content .members-card img {
+      max-width: 50%; }
     #members-content .members-card h2 {
       font-weight: 400;
       font-size: 1.4rem; }
     #members-content .members-card h3 {
-      font-weight: 400; }
+      font-weight: 400;
+      color: #80764A; }
+  #members-content .member-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
 
 #error {
   padding: 2rem 0 3rem 0;
