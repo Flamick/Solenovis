@@ -32,7 +32,8 @@
   font-size: 1.2rem;
   text-align: center;
   font-weight: 600;
-  width: 100%; }
+  width: 100%;
+  max-width: 800px; }
 
 .btn-light {
   color: #333;
@@ -70,9 +71,6 @@
   background: #333;
   display: block;
   margin: 0 auto; }
-
-.reverse {
-  flex-direction: row-reverse; }
 
 #mobile-nav {
   background: #80764A;
@@ -210,7 +208,9 @@
   background: #f4f4f4;
   box-shadow: 0px 6px 15px #80764A;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; }
 
 .wrapper i {
   cursor: pointer; }
@@ -703,6 +703,8 @@ body {
     #members-content .members-card h3 {
       font-weight: 400;
       color: #80764A; }
+  #members-content .card-reverse {
+    flex-direction: row-reverse; }
   #members-content .member-info {
     display: flex;
     flex-direction: column;
@@ -731,3 +733,35 @@ body {
     #error .error-img img {
       min-width: 100%;
       height: auto; }
+
+@media screen and (min-width: 768px) {
+  #home-hero {
+    min-height: 50vh; }
+  .wrapper {
+    max-width: 500px; }
+  .img-area {
+    height: 300px;
+    max-width: fit-content;
+    justify-self: center;
+    align-self: center; }
+  #members .members-bio {
+    flex-direction: row; }
+  #members .members-card {
+    flex-direction: column;
+    max-width: 50%; }
+  #members .reverse {
+    flex-direction: row-reverse; } }
+
+@media screen and (min-width: 1025px) {
+  #home-hero {
+    min-height: 100vh; }
+  #out-now {
+    height: 75vh; }
+  #youtube .container {
+    max-width: 1000px; }
+  #about p {
+    line-height: 1.4rem; }
+  #about-content-text {
+    padding: 2rem; }
+  #members .members-bio {
+    padding: 1.4rem 2rem; } }

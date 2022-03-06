@@ -412,6 +412,10 @@ body {
             }
         }
 
+        .card-reverse {
+            flex-direction: row-reverse;
+        }
+
         .member-info {
             display: flex;
             flex-direction: column;
@@ -455,3 +459,5 @@ body {
         }
     }
 }
+
+@import "media";

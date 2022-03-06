@@ -6,6 +6,8 @@
     box-shadow: 0px 6px 15px $medium-complimentary;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .wrapper i {

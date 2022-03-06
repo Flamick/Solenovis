@@ -1,0 +1,61 @@
+@media screen and (min-width:768px) {
+    #home-hero {
+        min-height: 50vh;
+    }
+
+    .wrapper {
+        max-width: 500px;
+    }
+
+    .img-area {
+        height: 300px;
+        max-width: fit-content;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #members {
+        .members-bio {
+            flex-direction: row;
+        }
+
+        .members-card {
+            flex-direction: column;
+            max-width: 50%;
+        }
+
+        .reverse {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #home-hero {
+        min-height: 100vh;
+    }
+
+    #out-now {
+        height: 75vh;
+    }
+
+    #youtube .container {
+        max-width: 1000px;
+    }
+
+    #about {
+        p {
+            line-height: 1.4rem;
+        }
+
+        &-content-text {
+            padding: 2rem;
+        }
+    }
+
+    #members {
+        .members-bio {
+            padding: 1.4rem 2rem;
+        }
+    }
+}
