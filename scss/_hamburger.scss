@@ -16,6 +16,13 @@
             color: $light-color;
             transition: all .5s ease-in-out;
 
+            &:hover,
+            &:active,
+            &:focus {
+                color: $primary-color;
+                cursor: pointer;
+            }
+
             &.hidden {
                 opacity: 0;
             }
@@ -147,6 +154,13 @@
         padding: .8rem 1rem;
         color: $light-color;
         font-size: 1.3rem;
+        transition: all .5s ease-in-out;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $dark-color;
+        }
     }
 
     &.open {

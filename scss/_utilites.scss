@@ -52,7 +52,8 @@
         &:hover,
         &:active,
         &:focus {
-            background: $primary-color
+            color: $light-color;
+            background: $dark-color
         }
 
         &:visited {
@@ -69,7 +70,7 @@
         &:hover,
         &:active,
         &:focus {
-            background: $light-color;
+            background: $primary-color;
             color: $dark-color;
         }
 

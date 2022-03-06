@@ -39,7 +39,8 @@
   background: #f4f4f4;
   transition: all 450ms; }
   .btn-light:hover, .btn-light:active, .btn-light:focus {
-    background: #FFEC93; }
+    color: #f4f4f4;
+    background: #333; }
   .btn-light:visited {
     text-decoration: none; }
 
@@ -48,7 +49,7 @@
   background: #333;
   transition: all 450ms; }
   .btn-dark:hover, .btn-dark:active, .btn-dark:focus {
-    background: #f4f4f4;
+    background: #FFEC93;
     color: #333; }
   .btn-dark:visited {
     text-decoration: none; }
@@ -87,6 +88,9 @@
     #mobile-nav .flex-container i {
       color: #f4f4f4;
       transition: all .5s ease-in-out; }
+      #mobile-nav .flex-container i:hover, #mobile-nav .flex-container i:active, #mobile-nav .flex-container i:focus {
+        color: #FFEC93;
+        cursor: pointer; }
       #mobile-nav .flex-container i.hidden {
         opacity: 0; }
   #mobile-nav .menu-container {
@@ -186,7 +190,10 @@
     text-align: center;
     padding: .8rem 1rem;
     color: #f4f4f4;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    transition: all .5s ease-in-out; }
+    #mobile-menu a:hover, #mobile-menu a:active, #mobile-menu a:focus {
+      color: #333; }
   #mobile-menu.open {
     left: 0; }
     #mobile-menu.open .navlink-1,
@@ -431,13 +438,6 @@ img {
   max-width: 100%;
   display: block; }
 
-a {
-  text-decoration: none;
-  color: inherit; }
-  a:visited {
-    text-decoration: none;
-    color: inherit; }
-
 i.material-icons {
   font-size: 2rem;
   width: 32px; }
@@ -473,11 +473,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    #home-hero #hero-content a {
+      text-decoration: none;
+      color: inherit; }
+      #home-hero #hero-content a:visited {
+        text-decoration: none;
+        color: inherit; }
     #home-hero #hero-content h1 {
       padding: .2rem .4rem;
       font-weight: 500;
       border: 3px #f4f4f4 solid;
-      width: fit-content; }
+      width: fit-content;
+      transition: all .5s ease-in-out; }
+      #home-hero #hero-content h1:hover, #home-hero #hero-content h1:focus, #home-hero #hero-content h1:active {
+        color: #FFEC93;
+        border-color: #FFEC93; }
   #home-hero > * {
     z-index: 2;
     position: relative; }
@@ -517,12 +527,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+    #playlist-info #albums-purchase a {
+      text-decoration: none;
+      color: inherit; }
+      #playlist-info #albums-purchase a:visited {
+        text-decoration: none;
+        color: inherit; }
     #playlist-info #albums-purchase i {
       width: 52px;
       margin: 0 .5rem;
       border: 2px solid #f4f4f4;
       border-radius: 50%;
-      padding: .5rem; }
+      padding: .5rem;
+      transition: all .5s ease-in-out; }
+      #playlist-info #albums-purchase i:visited {
+        text-decoration: none;
+        color: inherit; }
+      #playlist-info #albums-purchase i:hover, #playlist-info #albums-purchase i:active, #playlist-info #albums-purchase i:focus {
+        color: #FFEC93;
+        border-color: #FFEC93; }
   #playlist-info .bottom-line {
     background-color: #f4f4f4; }
 
@@ -599,23 +622,38 @@ body {
       border-radius: 50%;
       padding: 0.5rem;
       transition: all 450ms; }
-      #main-footer .footer-content .social .fab:hover {
-        background: #FFEC93; }
-    #main-footer .footer-content a {
-      text-decoration: none;
-      color: #f4f4f4; }
   #main-footer .social {
     padding: .4rem 0;
     display: flex;
     justify-content: center;
     align-items: center; }
+    #main-footer .social a {
+      text-decoration: none;
+      color: inherit;
+      transition: all .5s ease-in-out; }
+      #main-footer .social a:visited {
+        text-decoration: none;
+        color: inherit; }
+      #main-footer .social a:hover i,
+      #main-footer .social a:active i,
+      #main-footer .social a:focus i {
+        color: #FFEC93;
+        border-color: #FFEC93; }
     #main-footer .social i {
       width: 56px;
       margin: 0 .5rem;
       border: 2px solid #f4f4f4;
       border-radius: 50%;
       text-align: center;
-      padding: .5rem; }
+      padding: .5rem;
+      transition: all .5s ease-in-out; }
+
+#about a {
+  text-decoration: none;
+  color: inherit; }
+  #about a:visited {
+    text-decoration: none;
+    color: inherit; }
 
 #about-hero {
   padding: 1rem 0; }
@@ -681,8 +719,6 @@ body {
   #error h3 {
     text-align: center;
     padding: 1rem 0 2rem; }
-    #error h3 a {
-      color: #80764A; }
   #error .error-content {
     display: flex;
     flex-direction: column;
@@ -695,5 +731,3 @@ body {
     #error .error-img img {
       min-width: 100%;
       height: auto; }
-  #error .btn {
-    color: #f4f4f4; }

@@ -19,15 +19,7 @@ img {
     display: block;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
 
-    &:visited {
-        text-decoration: none;
-        color: inherit;
-    }
-}
 
 i.material-icons {
     font-size: 2rem;
@@ -70,11 +62,29 @@ body {
         justify-content: center;
         align-items: center;
 
+        a {
+            text-decoration: none;
+            color: inherit;
+        
+            &:visited {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+
         h1 {
             padding: .2rem .4rem;
             font-weight: 500;
             border: 3px $light-color solid;
             width: fit-content;
+            transition: all .5s ease-in-out;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $primary-color;
+                border-color: $primary-color;
+            }
         }
     }
 
@@ -131,12 +141,35 @@ body {
         justify-content: center;
         align-items: center;
 
+        a {
+            text-decoration: none;
+            color: inherit;
+        
+            &:visited {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+
         i {
             width: 52px;
             margin: 0 .5rem;
             border: 2px solid $light-color;
             border-radius: 50%;
             padding: .5rem;
+            transition: all .5s ease-in-out;
+            
+            &:visited {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $primary-color;
+                border-color: $primary-color;
+            }
         }
     }
 
@@ -238,28 +271,19 @@ body {
         font-size: 1rem;
         padding: 2rem 0 0 0;
         text-align: center;
+        
 
         p {
             padding-bottom: .5rem;
         }
 
-        
 
         .social .fab {
             border: 2px #f4f4f4 solid;
             border-radius: 50%;
             padding: 0.5rem;
             transition: all 450ms;
-
-            &:hover {
-                background: $primary-color;
-            }
         }
-
-        a {
-            text-decoration: none;
-            color: $light-color;
-        }   
     }
 
     .social {
@@ -268,6 +292,24 @@ body {
         justify-content: center;
         align-items: center;
 
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all .5s ease-in-out;
+        
+            &:visited {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            &:hover i,
+            &:active i,
+            &:focus i {
+                color: $primary-color;
+                border-color: $primary-color;
+            }
+        }
+
         i {
             width: 56px;
             margin: 0 .5rem;
@@ -275,11 +317,22 @@ body {
             border-radius: 50%;
             text-align: center;
             padding: .5rem;
+            transition: all .5s ease-in-out;
         }
     }
 }
 
 #about {
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        &:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
     &-hero {
         padding: 1rem 0;
     }
@@ -382,10 +435,6 @@ body {
     h3 {
         text-align: center;
         padding: 1rem 0 2rem;
-
-        a {
-            color: $medium-complimentary;
-        }
     }
 
     .error-content {
@@ -404,9 +453,5 @@ body {
             min-width: 100%;
             height: auto;
         }
-    }
-
-    .btn {
-        color: $light-color;
     }
 }
