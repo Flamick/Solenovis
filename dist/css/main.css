@@ -501,7 +501,7 @@ body {
   #playlist-info-text {
     padding: 1rem 0; }
   #playlist-info #albums-purchase {
-    padding: 1rem 0 0 0;
+    padding: 1.6rem 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -511,6 +511,8 @@ body {
       border: 2px solid #f4f4f4;
       border-radius: 50%;
       padding: .5rem; }
+  #playlist-info .bottom-line {
+    background-color: #f4f4f4; }
 
 #albums {
   padding: 2rem 0;

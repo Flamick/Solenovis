@@ -127,7 +127,7 @@ body {
     }
 
     #albums-purchase {
-        padding: 1rem 0 0 0;
+        padding: 1.6rem 0 0 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -139,6 +139,10 @@ body {
             border-radius: 50%;
             padding: .5rem;
         }
+    }
+
+    .bottom-line {
+        background-color: $light-color;
     }
 }
 
