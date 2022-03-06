@@ -754,7 +754,7 @@ body {
 
 @media screen and (min-width: 1025px) {
   #home-hero {
-    min-height: 100vh; }
+    min-height: 110vh; }
   #out-now {
     height: 75vh; }
   #youtube .container {
