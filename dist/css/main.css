@@ -425,6 +425,10 @@ a {
     text-decoration: none;
     color: inherit; }
 
+i.material-icons {
+  font-size: 2rem;
+  width: 32px; }
+
 body {
   font-family: "Roboto", sans-serif; }
 
@@ -471,7 +475,7 @@ body {
   height: 60vh; }
 
 #media-player {
-  padding: 2rem 0;
+  padding: 3rem 0 2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -486,7 +490,7 @@ body {
     align-items: center; }
     #media-player-content h2 {
       font-weight: 400;
-      padding-bottom: .4rem; }
+      padding-bottom: 1rem; }
 
 #spotify-info {
   padding: 1.5rem 0;
@@ -495,3 +499,34 @@ body {
     padding: .2rem 0; }
   #spotify-info-text {
     padding: 1rem 0; }
+
+#albums {
+  padding: 2rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #albums-content-heading {
+    padding: 1rem 0; }
+    #albums-content-heading h2 {
+      font-weight: 400;
+      padding-bottom: 1rem; }
+    #albums-content-heading .bottom-line {
+      background: #FFEC93; }
+  #albums-purchase {
+    padding: 1rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #albums-purchase i {
+      width: 52px;
+      margin: 0 .5rem;
+      border: 2px solid #f4f4f4;
+      border-radius: 50%;
+      padding: .5rem; }
+  #albums h3 {
+    font-weight: 400;
+    padding-bottom: .2rem; }
+  #albums img {
+    padding-bottom: 1.6rem; }
