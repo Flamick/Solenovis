@@ -10,7 +10,22 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: space-between;
+
+        i {
+            color: $light-color;
+            transition: all .5s ease-in-out;
+
+            &.hidden {
+                opacity: 0;
+            }
+        }
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     #menu-label {

@@ -6,6 +6,7 @@
 
 .flex-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -44,7 +45,7 @@
 .btn {
     &-light {
         @extend %btn-shared;
-        color: $medium-complimentary;
+        color: $dark-color;
         background: $light-color;
         transition: all 450ms;
 

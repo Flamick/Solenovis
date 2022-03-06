@@ -39,7 +39,7 @@ body {
 }
 
 #home-hero {
-    background: url("../img/solenovis_band.jpg") no-repeat center center/contain;
+    background: url("../img/solenovis_band_2.jpg") no-repeat center center/contain;
     position: relative;
     top: 0;
     min-height: 36vh;
@@ -69,7 +69,6 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 3rem;
 
         h1 {
             padding: .2rem .4rem;
@@ -174,5 +173,150 @@ body {
 
     img {
         padding: 1.6rem 0;
+    }
+}
+
+#youtube {
+    padding: 2rem 0;
+    background: linear-gradient(to bottom, rgba($light-color, $alpha: 0.85), $medium-complimentary);
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .iframe-container{
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; 
+            height: 0;
+            margin: 2rem 0;
+        }
+
+        .iframe-container iframe{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &-heading {
+            h2 {
+                font-weight: 400;
+                padding-bottom: 1.2rem;
+            }
+        }
+    }
+
+    &-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $light-color;
+
+        h3 {
+            font-weight: 400;
+            padding-bottom: 1.2rem;
+        }
+    }
+}
+
+#main-footer {
+    background: $dark-color;
+    color: #fff;
+    
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 1rem;
+        padding: 2rem 0 0 0;
+        text-align: center;
+
+        p {
+            padding-bottom: .5rem;
+        }
+
+        
+
+        .social .fab {
+            border: 2px #f4f4f4 solid;
+            border-radius: 50%;
+            padding: 0.5rem;
+            transition: all 450ms;
+
+            &:hover {
+                background: $primary-color;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $light-color;
+        }   
+    }
+
+    .social {
+        padding: .4rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            width: 56px;
+            margin: 0 .5rem;
+            border: 2px solid $light-color;
+            border-radius: 50%;
+            text-align: center;
+            padding: .5rem;
+        }
+    }
+}
+
+// 404 page
+#error {
+    padding: 2rem 0 3rem 0;
+    min-height: 90vh;
+
+    h1 {
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    h3 {
+        text-align: center;
+        padding: 1rem 0 2rem;
+
+        a {
+            color: $medium-complimentary;
+        }
+    }
+
+    .error-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .error-img {
+        height: auto;
+        min-width: 100%;
+        padding: 1rem 0;
+
+        img {
+            min-width: 100%;
+            height: auto;
+        }
+    }
+
+    .btn {
+        color: $light-color;
     }
 }
