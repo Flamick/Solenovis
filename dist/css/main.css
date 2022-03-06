@@ -57,9 +57,9 @@
     color: #f4f4f4; }
 
 .bottom-line {
-  height: 2px;
+  height: 3px;
   width: 7rem;
-  background: #FFEC93;
+  background: #333;
   display: block;
   margin: 0 auto; }
 
@@ -468,4 +468,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(to bottom, rgba(255, 236, 147, 0.55), #80764A); }
+  background: linear-gradient(to bottom, rgba(244, 244, 244, 0.55), #80764A); }
+  #media-player-content {
+    padding-bottom: 1rem;
+    color: #333; }
+    #media-player-content h2 {
+      font-weight: 500;
+      padding-bottom: .4rem; }
