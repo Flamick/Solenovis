@@ -67,6 +67,7 @@
   background: #80764A;
   z-index: 4;
   position: sticky;
+  padding: .4rem 0;
   top: 0; }
   #mobile-nav .flex-container {
     display: flex;
@@ -86,8 +87,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   transition: all .5s ease-in-out;
   z-index: 4;
