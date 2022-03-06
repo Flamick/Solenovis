@@ -53,19 +53,27 @@
         &:focus {
             background: $primary-color
         }
+
+        &:visited {
+            text-decoration: none
+        }
     }
 
     &-dark {
         @extend %btn-shared;
         color: $light-color;
-        background: $medium-complimentary;
+        background: $dark-color;
         transition: all 450ms;
 
         &:hover,
         &:active,
         &:focus {
             background: $light-color;
-            color: $medium-complimentary;
+            color: $dark-color;
+        }
+
+        &:visited {
+            text-decoration: none
         }
     }
 
@@ -80,6 +88,10 @@
         &:focus {
             background: $dark-color;
             color: $light-color;
+        }
+
+        &:visited {
+            text-decoration: none
         }
     }
 }
