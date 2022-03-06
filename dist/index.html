@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solenovis is a band based out of Ohio bringing you a fresh sound and style.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/90872ef2e4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Solenovis</title>
+</head>
+<body>
+    <!-- Mobile Hamburger -->
+    <nav id="mobile-nav">
+        <div class="container">
+            <div class="flex-container">
+                <h2 id="menu-label">Menu</h2>
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="mobile-menu">
+        <ul>
+            <li class="navlink-1 current-mobile"><a href="index.html">Home</a></li>
+            <li class="navlink-2"><a href="services.html">Music</a></li>
+            <li class="navlink-3"><a href="contact.html">Contact Us</a></li>
+            <li class="navlink-4"><a href="about.html">About Us</a></li>
+        </ul>
+    </div>
+
+    <main id="home-hero">
+        <div class="container">
+            <div id="hero-content">
+                <h1>Solenovis</h1>
+            </div>
+        </div>
+    </main>
+
+    <section id="out-now">
+        <div class="container">
+            <div id="out-now-content">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="media-player">
+        <div class="flex-container">
+            <div class="wrapper">
+                <div class="top-bar">
+                    <span class="now-playing">Now Playing 1 of 5</span>
+                </div>
+                <div class="img-area">
+                    <img>
+                </div>
+                <div class="song-details">
+                    <p class="name"></p>
+                    <p class="artist"></p>
+                </div>
+                <div class="progress-area">
+                    <div class="progress-bar"></div>
+                    <div class="timer">
+                        <span class="current">0:00</span>
+                        <span class="duration"></span>
+                    </div>
+                    <audio id="main-audio"></audio>
+                </div>
+                <div class="controls">
+                    <i id="repeat-playlist" class="material-icons" title="Playlist Looped">repeat</i>
+                    <i id="prev-song" class="material-icons">skip_previous</i>
+                    <div class="play-pause">
+                        <i class="material-icons">play_arrow</i>
+                    </div>
+                    <i id="next-song" class="material-icons">skip_next</i>
+                    <i id="more-music" class="material-icons">queue_music</i>
+                </div>
+                <div class="music-list">
+                    <div class="header">
+                        <div class="row">
+                            <i class="material-icons">queue_music</i>
+                            <span>Music list</span>
+                        </div>
+                        <i id="close" class="material-icons">close</i>
+                    </div>
+                    <ul>  
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/music_list.js"></script>
+    <script src="js/media_player.js"></script>
+    <script src="js/hamburger.js"></script> 
+</body>
+</html>

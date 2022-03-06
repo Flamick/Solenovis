@@ -1,0 +1,93 @@
+.container {
+    max-width: 1200px;
+    width: 86%;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// background colors
+.bg-dark {
+    color: $light-color;
+    background: $dark-color;
+}
+
+.bg-medium {
+    color: $light-color;
+    background: $medium-complimentary;
+}
+
+.bg-light {
+    color: $dark-color;
+    background: $light-complimentary;
+}
+
+// Buttons
+%btn-shared {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+}
+
+.btn {
+    &-light {
+        @extend %btn-shared;
+        color: $medium-complimentary;
+        background: $light-color;
+        transition: all 450ms;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background: $primary-color
+        }
+    }
+
+    &-dark {
+        @extend %btn-shared;
+        color: $light-color;
+        background: $medium-complimentary;
+        transition: all 450ms;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background: $light-color;
+            color: $medium-complimentary;
+        }
+    }
+
+    &-primary {
+        @extend %btn-shared;
+        color: $dark-color;
+        background: $primary-color;
+        transition: all 450ms;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background: $dark-color;
+            color: $light-color;
+        }
+    }
+}
+
+.bottom-line {
+    height: 2px;
+    width: 7rem;
+    background: $primary-color;
+    display: block;
+    margin: 0 auto;
+}

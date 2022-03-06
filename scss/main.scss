@@ -1,0 +1,93 @@
+@import "config";
+@import "utilites";
+@import "hamburger";
+@import "media_player";
+
+// Reset
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+
+    &:visited {
+        text-decoration: none;
+    }
+}
+
+body {
+    font-family: $primary-font;
+}
+
+#home-hero {
+    background: url("../img/solenovis_band.jpg") no-repeat center center/contain;
+    position: relative;
+    top: 0;
+    min-height: 50vh;
+    background-size: 120%;
+    background-color: $medium-complimentary;
+    color: $light-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba($color: #333, $alpha: 0.5);
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    & #hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+
+        h1 {
+            padding: .2rem .4rem;
+            font-weight: 500;
+            border: 3px $light-color solid;
+            width: fit-content;
+        }
+    }
+
+    & > * {
+        z-index: 2;
+        position: relative;
+    }
+}
+
+#out-now {
+    background: url("../img/solenovis_out_now.jpg") no-repeat center center/cover;
+    height: 50vh;
+}
+
+#media-player {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba($color: $primary-color, $alpha: 0.55), $medium-complimentary);
+}

@@ -1,0 +1,147 @@
+// Hamburger Menu Mobile
+#mobile-nav {
+    background: $medium-complimentary;
+    z-index: 4;
+    position: sticky;
+    top: 0;
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #menu-label {
+        font-weight: 300;
+        color: $light-color;
+        transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+
+        &.hidden {
+            opacity: 0;
+        }
+    }
+}
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    z-index: 4;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.menu-btn__burger {
+    width: 26px;
+    height: 2px;
+    background: $light-color;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    background: $light-color;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-9px);
+}
+
+.menu-btn__burger::after {
+    transform: translateY(9px);
+}
+
+// Animation
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+#mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 3;
+    background-color: $medium-complimentary;
+    transition: all .3s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+
+    .current-mobile {
+        color: $primary-color;
+    }
+
+    .navlink-1 {
+        transform: translateX(100%);
+        transition: 500ms all 150ms;
+    }
+    .navlink-2{
+        transform: translateX(100%);
+        transition: 500ms all 250ms;
+    }
+    .navlink-3 {
+        transform: translateX(100%);
+        transition: 500ms all 350ms;
+    }
+    .navlink-4 {
+        transform: translateX(100%);
+        transition: 500ms all 450ms;
+    }
+    .navlink-5 {
+        transform: translateX(100%);
+        transition: 500ms all 550ms;
+    }
+
+    ul {
+        list-style: none;
+    }
+    
+
+    a {
+        text-decoration: none;
+        display: block;
+        margin: 0 auto 1.4rem;
+        text-align: center;
+        padding: .8rem 1rem;
+        color: $light-color;
+        font-size: 1.3rem;
+    }
+
+    &.open {
+        left: 0;
+
+        & .navlink-1,
+        & .navlink-2,
+        & .navlink-3,
+        & .navlink-4,
+        & .navlink-5 {
+            transform: translateX(0);
+        }
+    }
+}
