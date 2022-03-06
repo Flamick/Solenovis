@@ -96,7 +96,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to bottom, rgba($light-color, $alpha: 0.55), $medium-complimentary);
+    background: linear-gradient(to bottom, rgba($light-color, $alpha: 0.85), $medium-complimentary);
 
     &-content {
         padding-bottom: 1.2rem;
@@ -113,9 +113,10 @@ body {
     }
 }
 
-#spotify-info {
+#playlist-info {
     padding: 1.5rem 0;
     text-align: center;
+    color: $light-color;
 
     h3 {
         padding: .2rem 0;
@@ -123,6 +124,21 @@ body {
 
     &-text {
         padding: 1rem 0;
+    }
+
+    #albums-purchase {
+        padding: 1rem 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            width: 52px;
+            margin: 0 .5rem;
+            border: 2px solid $light-color;
+            border-radius: 50%;
+            padding: .5rem;
+        }
     }
 }
 
@@ -147,27 +163,12 @@ body {
         }
     }
 
-    &-purchase {
-        padding: 1rem 0 2rem 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        i {
-            width: 52px;
-            margin: 0 .5rem;
-            border: 2px solid $light-color;
-            border-radius: 50%;
-            padding: .5rem;
-        }
-    }
-
     h3 {
         font-weight: 400;
         padding-bottom: .2rem;
     }
 
     img {
-        padding-bottom: 1.6rem;
+        padding: 1.6rem 0;
     }
 }

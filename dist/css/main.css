@@ -480,7 +480,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(to bottom, rgba(244, 244, 244, 0.55), #80764A); }
+  background: linear-gradient(to bottom, rgba(244, 244, 244, 0.85), #80764A); }
   #media-player-content {
     padding-bottom: 1.2rem;
     color: #333;
@@ -492,13 +492,25 @@ body {
       font-weight: 400;
       padding-bottom: 1rem; }
 
-#spotify-info {
+#playlist-info {
   padding: 1.5rem 0;
-  text-align: center; }
-  #spotify-info h3 {
+  text-align: center;
+  color: #f4f4f4; }
+  #playlist-info h3 {
     padding: .2rem 0; }
-  #spotify-info-text {
+  #playlist-info-text {
     padding: 1rem 0; }
+  #playlist-info #albums-purchase {
+    padding: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #playlist-info #albums-purchase i {
+      width: 52px;
+      margin: 0 .5rem;
+      border: 2px solid #f4f4f4;
+      border-radius: 50%;
+      padding: .5rem; }
 
 #albums {
   padding: 2rem 0;
@@ -514,19 +526,8 @@ body {
       padding-bottom: 1rem; }
     #albums-content-heading .bottom-line {
       background: #FFEC93; }
-  #albums-purchase {
-    padding: 1rem 0 2rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    #albums-purchase i {
-      width: 52px;
-      margin: 0 .5rem;
-      border: 2px solid #f4f4f4;
-      border-radius: 50%;
-      padding: .5rem; }
   #albums h3 {
     font-weight: 400;
     padding-bottom: .2rem; }
   #albums img {
-    padding-bottom: 1.6rem; }
+    padding: 1.6rem 0; }
